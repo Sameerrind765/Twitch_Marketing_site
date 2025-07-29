@@ -1,0 +1,46 @@
+{
+  "name": "AutoTrustReport-backend",
+  "version": "1.0.0",
+  "description": "AutoTrustReport Car Inspection Booking API",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider ts-node-esm src/server.mts",
+    "build": "tsc && copyfiles -u 1 src/google-service-account.json dist/",
+    "start": "node --loader ts-node/esm dist/server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "car",
+    "inspection",
+    "booking",
+    "api"
+  ],
+  "author": "AutoTrustReport",
+  "license": "MIT",
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "googleapis": "^153.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "nodemailer": "^6.10.1",
+    "nodemailer-sendmail-transport": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.15",
+    "@types/nodemailer": "^6.4.17",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
