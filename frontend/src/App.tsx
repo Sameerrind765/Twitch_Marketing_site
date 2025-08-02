@@ -316,7 +316,7 @@ function App() {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src="/d26eb54b-33ed-4876-9335-cb14d7097daf-profile_image-150x150.png"
+                  src="/433250a2-f489-49b1-b6a5-4a236a4a86f7-profile_image-70x70 copy.png"
                   alt="YvngOllieStreams"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -377,7 +377,7 @@ function App() {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src="/433250a2-f489-49b1-b6a5-4a236a4a86f7-profile_image-70x70 copy.png"
+                  src="/713c4931-45d2-4246-868d-0692bbed5483-profile_image-70x70 copy.png"
                   alt="ilyjump"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -438,7 +438,7 @@ function App() {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src="/713c4931-45d2-4246-868d-0692bbed5483-profile_image-70x70 copy.png"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/d26eb54b-33ed-4876-9335-cb14d7097daf-profile_image-70x70.png"
                   alt="faronova"
                   className="w-16 h-16 rounded-full object-cover"
                 />
