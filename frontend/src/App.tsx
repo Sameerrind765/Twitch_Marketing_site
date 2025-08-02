@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import SuccessStories from './components/SuccessStories';
 import ContactForm from './components/ContactForm';
-import { 
-  Zap, 
-  Target, 
-  TrendingUp, 
-  Users, 
-  DollarSign, 
-  CheckCircle, 
+import {
+  Zap,
+  Target,
+  TrendingUp,
+  Users,
+  DollarSign,
+  CheckCircle,
   Star,
   BarChart3,
   Globe,
@@ -32,7 +32,7 @@ function App() {
     {
       id: 'basic',
       name: 'Basic Tier',
-      price: '$100–$200',
+      price: '$200',
       description: 'Perfect for streamers starting their journey',
       features: [
         'Meta ad launch setup with budget',
@@ -46,7 +46,7 @@ function App() {
     {
       id: 'growth',
       name: 'Growth Tier',
-      price: '$300–$500',
+      price: '$500',
       description: 'Most popular choice for serious streamers',
       features: [
         'Everything in Basic Tier',
@@ -61,7 +61,7 @@ function App() {
     {
       id: 'premium',
       name: 'Premium Tier',
-      price: '$600–$800+',
+      price: '$800+',
       description: 'Complete solution for professional streamers',
       features: [
         'All Growth Tier features',
@@ -134,11 +134,11 @@ function App() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-purple-100 max-w-3xl mx-auto leading-relaxed">
-              From zero to Twitch Affiliate with guaranteed results. Organic growth through targeted Meta ads, 
+              From zero to Twitch Affiliate with guaranteed results. Organic growth through targeted Meta ads,
               professional branding, and proven strategies that deliver real success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button 
+              <button
                 onClick={() => handleStartGrowing()}
                 className="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
               >
@@ -146,7 +146,7 @@ function App() {
                 Start Growing Now
               </button>
             </div>
-            
+
             {/* Key Features */}
             <div className="grid md:grid-cols-4 gap-6 mt-16">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
@@ -183,16 +183,15 @@ function App() {
               Every plan guarantees Affiliate status. Select the tier that matches your growth ambitions.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {plans.map((plan) => (
-              <div 
+              <div
                 key={plan.id}
-                className={`relative p-8 rounded-2xl transition-all duration-300 hover:scale-105 cursor-pointer ${
-                  plan.highlight 
-                    ? 'bg-gradient-to-br from-purple-600 to-indigo-600 text-white shadow-2xl' 
+                className={`relative p-8 rounded-2xl transition-all duration-300 hover:scale-105 cursor-pointer ${plan.highlight
+                    ? 'bg-gradient-to-br from-purple-600 to-indigo-600 text-white shadow-2xl'
                     : 'bg-gray-50 hover:bg-gray-100 border-2 border-gray-200'
-                }`}
+                  }`}
                 onClick={() => setSelectedPlan(plan.id)}
               >
                 {plan.highlight && (
@@ -202,7 +201,7 @@ function App() {
                     </span>
                   </div>
                 )}
-                
+
                 <div className="text-center mb-6">
                   <h3 className={`text-2xl font-bold mb-2 ${plan.highlight ? 'text-white' : 'text-gray-900'}`}>
                     {plan.name}
@@ -214,27 +213,25 @@ function App() {
                     {plan.description}
                   </p>
                 </div>
-                
+
                 <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
-                        plan.highlight ? 'text-green-300' : 'text-green-500'
-                      }`} />
+                      <CheckCircle className={`w-5 h-5 mt-0.5 flex-shrink-0 ${plan.highlight ? 'text-green-300' : 'text-green-500'
+                        }`} />
                       <span className={`${plan.highlight ? 'text-white' : 'text-gray-700'}`}>
                         {feature}
                       </span>
                     </li>
                   ))}
                 </ul>
-                
-                <button 
+
+                <button
                   onClick={() => handleStartGrowing(plan.id)}
-                  className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${
-                  plan.highlight 
-                    ? 'bg-white text-purple-600 hover:bg-gray-100' 
-                    : 'bg-purple-600 text-white hover:bg-purple-700'
-                }`}>
+                  className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${plan.highlight
+                      ? 'bg-white text-purple-600 hover:bg-gray-100'
+                      : 'bg-purple-600 text-white hover:bg-purple-700'
+                    }`}>
                   Get Started
                   <ArrowRight className="w-5 h-5 inline ml-2" />
                 </button>
@@ -253,12 +250,12 @@ function App() {
               Real clients, real results. Click to visit their Twitch channels and see the growth for yourself.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src="/8efe124e-56db-4677-9402-2f370c0002ab-profile_image-150x150.png" 
+                <img
+                  src="/8efe124e-56db-4677-9402-2f370c0002ab-profile_image-150x150.png"
                   alt="tnt891"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -269,7 +266,7 @@ function App() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
@@ -280,7 +277,7 @@ function App() {
                     15 → 2,847
                   </div>
                 </div>
-                
+
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="w-5 h-5 text-green-600" />
@@ -289,7 +286,7 @@ function App() {
                   <div className="text-2xl font-bold text-gray-900">$890/month</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-purple-600" />
@@ -300,12 +297,12 @@ function App() {
                   <span className="text-sm font-semibold text-green-600">Twitch Partner</span>
                 </div>
               </div>
-              
+
               <blockquote className="text-gray-700 italic mb-4 leading-relaxed">
                 "Started with zero viewers, now I consistently get 90+ concurrent viewers every stream. The targeted ads brought exactly the gaming community I needed!"
               </blockquote>
-              
-              <a 
+
+              <a
                 href="https://www.twitch.tv/tnt891"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -318,8 +315,8 @@ function App() {
 
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src="/d26eb54b-33ed-4876-9335-cb14d7097daf-profile_image-150x150.png" 
+                <img
+                  src="/d26eb54b-33ed-4876-9335-cb14d7097daf-profile_image-150x150.png"
                   alt="YvngOllieStreams"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -330,7 +327,7 @@ function App() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
@@ -341,7 +338,7 @@ function App() {
                     45 → 1,890
                   </div>
                 </div>
-                
+
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="w-5 h-5 text-green-600" />
@@ -350,7 +347,7 @@ function App() {
                   <div className="text-2xl font-bold text-gray-900">$650/month</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-purple-600" />
@@ -361,12 +358,12 @@ function App() {
                   <span className="text-sm font-semibold text-green-600">Twitch Affiliate + Growing Fast</span>
                 </div>
               </div>
-              
+
               <blockquote className="text-gray-700 italic mb-4 leading-relaxed">
                 "Amazing growth! From barely any followers to a solid community. The affiliate program helped me start earning from my passion!"
               </blockquote>
-              
-              <a 
+
+              <a
                 href="https://www.twitch.tv/YvngOllieStreams"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -379,8 +376,8 @@ function App() {
 
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src="/433250a2-f489-49b1-b6a5-4a236a4a86f7-profile_image-70x70 copy.png" 
+                <img
+                  src="/433250a2-f489-49b1-b6a5-4a236a4a86f7-profile_image-70x70 copy.png"
                   alt="ilyjump"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -391,7 +388,7 @@ function App() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
@@ -402,7 +399,7 @@ function App() {
                     78 → 2,340
                   </div>
                 </div>
-                
+
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="w-5 h-5 text-green-600" />
@@ -411,7 +408,7 @@ function App() {
                   <div className="text-2xl font-bold text-gray-900">$780/month</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-purple-600" />
@@ -422,12 +419,12 @@ function App() {
                   <span className="text-sm font-semibold text-green-600">Twitch Affiliate</span>
                 </div>
               </div>
-              
+
               <blockquote className="text-gray-700 italic mb-4 leading-relaxed">
                 "Perfect service! The growth was organic and my community loves the content. Reached affiliate faster than I ever imagined!"
               </blockquote>
-              
-              <a 
+
+              <a
                 href="https://www.twitch.tv/ilyjump"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -440,8 +437,8 @@ function App() {
 
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-xl border border-purple-100">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src="/713c4931-45d2-4246-868d-0692bbed5483-profile_image-70x70 copy.png" 
+                <img
+                  src="/713c4931-45d2-4246-868d-0692bbed5483-profile_image-70x70 copy.png"
                   alt="faronova"
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -452,7 +449,7 @@ function App() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
@@ -463,7 +460,7 @@ function App() {
                     92 → 3,120
                   </div>
                 </div>
-                
+
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="w-5 h-5 text-green-600" />
@@ -472,7 +469,7 @@ function App() {
                   <div className="text-2xl font-bold text-gray-900">$1,120/month</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-purple-600" />
@@ -483,12 +480,12 @@ function App() {
                   <span className="text-sm font-semibold text-green-600">Twitch Affiliate + Partner Track</span>
                 </div>
               </div>
-              
+
               <blockquote className="text-gray-700 italic mb-4 leading-relaxed">
                 "Exceptional results! My channel grew beyond expectations and the community engagement is incredible. Highly recommend their services!"
               </blockquote>
-              
-              <a 
+
+              <a
                 href="https://www.twitch.tv/faronova"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -511,7 +508,7 @@ function App() {
               Real metrics from real clients. Our track record speaks for itself.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-4 gap-8">
             {proofMetrics.map((metric, index) => (
               <div key={index} className="text-center">
@@ -523,15 +520,15 @@ function App() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-16 bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-2xl">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Success Tracking</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Monitor your Twitch growth with detailed follower analytics, viewer engagement metrics, 
+                Monitor your Twitch growth with detailed follower analytics, viewer engagement metrics,
                 and streaming performance insights.
               </p>
-              <button 
+              <button
                 onClick={() => handleStartGrowing()}
                 className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all"
               >
@@ -552,11 +549,11 @@ function App() {
                 <span className="text-2xl font-bold">TwitchGrowth Pro</span>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Professional Twitch growth services with guaranteed results. 
+                Professional Twitch growth services with guaranteed results.
                 From Affiliate to Partner, we're your growth partner.
               </p>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
@@ -567,7 +564,7 @@ function App() {
                 <li>Community Building</li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
@@ -577,15 +574,16 @@ function App() {
               </ul>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2025 TwitchGrowth Pro. All rights reserved. Guaranteed results or your money back.</p>
           </div>
         </div>
       </footer>
-      
-      <ContactForm 
-        isOpen={showContactForm} 
+
+      <ContactForm
+        key={showContactForm ? contactFormPlan : 'closed'}
+        isOpen={showContactForm}
         onClose={() => setShowContactForm(false)}
         selectedPlan={contactFormPlan}
       />

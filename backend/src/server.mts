@@ -102,6 +102,7 @@ interface twitchForm {
   message: string;
   goals: string[];
   sheetName: string;
+  url: string;
 }
 
 const app: Application = express();
@@ -209,6 +210,7 @@ async function appendTwitchToSheet(twitchForm: twitchForm) {
       twitchForm.plan,
       twitchForm.message,
       twitchForm.goals.join(", "), // Convert array to comma-separated string
+      twitchForm.url,
       readableTime,
     ],
   ];
@@ -431,6 +433,7 @@ Remember to follow up promptly - strike while the iron is hot! 🔥
         <li style="margin-bottom: 8px;"><strong>Name:</strong> ${twitchForm.name}</li>
         <li style="margin-bottom: 8px;"><strong>Email:</strong> <a href="mailto:${twitchForm.email}" style="color: #4299e1;">${twitchForm.email}</a></li>
         <li style="margin-bottom: 8px;"><strong>Twitch:</strong> <a href="https://twitch.tv/${twitchForm.twitchUsername}" target="_blank" style="color: #9146ff;">@${twitchForm.twitchUsername}</a></li>
+        <li style="margin-bottom: 8px;"><strong>Payment</strong> <a href="${twitchForm.url}" target="_blank" style="color: #9146ff;">@${twitchForm.twitchUsername}</a></li>
       </ul>
     </div>
 

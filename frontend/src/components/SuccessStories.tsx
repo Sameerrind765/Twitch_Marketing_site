@@ -18,7 +18,7 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({ isOpen, onClose }) => {
       achievement: "Twitch Partner",
       revenue: "$890/month",
       testimonial: "Started with zero viewers, now I consistently get 90+ concurrent viewers every stream. The targeted ads brought exactly the gaming community I needed!",
-      avatar: "/8efe124e-56db-4677-9402-2f370c0002ab-profile_image-150x150.png",
+      avatar: "/d26eb54b-33ed-4876-9335-cb14d7097daf-profile_image-150x150.png",
       twitchUrl: "https://www.twitch.tv/tnt891"
     },
     {
@@ -31,7 +31,7 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({ isOpen, onClose }) => {
       achievement: "Twitch Affiliate + Growing Fast",
       revenue: "$650/month",
       testimonial: "Amazing growth! From barely any followers to a solid community. The affiliate program helped me start earning from my passion!",
-      avatar: "/d26eb54b-33ed-4876-9335-cb14d7097daf-profile_image-150x150.png",
+      avatar: "/8efe124e-56db-4677-9402-2f370c0002ab-profile_image-150x150.png",
       twitchUrl: "https://www.twitch.tv/YvngOllieStreams"
     },
     {
