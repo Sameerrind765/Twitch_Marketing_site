@@ -412,7 +412,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose, selectedPlan
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-left text-sm font-semibold text-gray-700 mb-2">
                 <User className="w-4 h-4 inline mr-2" />
                 Full Name
               </label>
