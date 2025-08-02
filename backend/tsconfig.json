@@ -10,5 +10,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "exclude": ["src/server.mts"]
+  "include": ["src/server.mts"]
 }
