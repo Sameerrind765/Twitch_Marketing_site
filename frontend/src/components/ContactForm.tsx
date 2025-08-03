@@ -62,8 +62,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose, selectedPlan
   const paymentMethods = [
     { name: 'PayPal', icon: Wallet, color: 'bg-blue-500', link: "https://paypal.me/saroshfarrukh" },
     { name: 'CashApp', icon: Smartphone, color: 'bg-green-500', link: "https://cash.app/$AgatesServices" },
-    { name: 'Apple Pay', icon: Smartphone, color: 'bg-gray-800', link: "https://cash.app/$AgatesServices" },
-    { name: 'Card Payment', icon: CreditCard, color: 'bg-purple-500', link: "https://cash.app/$AgatesServices" }
+    { name: 'Apple Pay', icon: Smartphone, color: 'bg-gray-800', link: "https://Sales@AgatesServices.com" }
   ];
 
   // Validation functions
@@ -586,27 +585,4 @@ const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose, selectedPlan
   );
 };
 
-// Demo wrapper to show the component in action
-export default function Demo() {
-  const [isOpen, setIsOpen] = useState(true);
-
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="text-center">
-        <h1 className="text-2xl font-bold mb-4">Contact Form Demo</h1>
-        <button
-          onClick={() => setIsOpen(true)}
-          className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors"
-        >
-          Open Contact Form
-        </button>
-
-        <ContactForm
-          isOpen={isOpen}
-          onClose={() => setIsOpen(false)}
-          selectedPlan="growth"
-        />
-      </div>
-    </div>
-  );
-}
+export default ContactForm;

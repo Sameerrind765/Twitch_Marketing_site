@@ -261,7 +261,7 @@ function App() {
                 />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">tnt891</h3>
-                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-purple-100 text-purple-800 px-2 rounded-full text-sm font-semibold">
                     Premium Tier
                   </span>
                 </div>
@@ -271,9 +271,9 @@ function App() {
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <Users className="w-5 h-5 text-blue-600" />
-                    <span className="text-sm font-semibold text-gray-600">Followers</span>
+                    <span className="font-semibold text-gray-600">Followers</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900">
                     15 → 2,847
                   </div>
                 </div>
@@ -281,9 +281,9 @@ function App() {
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="w-5 h-5 text-green-600" />
-                    <span className="text-sm font-semibold text-gray-600">Revenue</span>
+                    <span className="text-lg lg:text-sm font-semibold text-gray-600">Revenue</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">$890/month</div>
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900">$890/month</div>
                 </div>
               </div>
 
@@ -322,7 +322,7 @@ function App() {
                 />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">YvngOllieStreams</h3>
-                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-purple-100 text-purple-800 px-2 rounded-full text-sm font-semibold">
                     Growth Tier
                   </span>
                 </div>
@@ -334,7 +334,7 @@ function App() {
                     <Users className="w-5 h-5 text-blue-600" />
                     <span className="text-sm font-semibold text-gray-600">Followers</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900">
                     45 → 1,890
                   </div>
                 </div>
@@ -342,9 +342,9 @@ function App() {
                 <div className="bg-white p-4 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="w-5 h-5 text-green-600" />
-                    <span className="text-sm font-semibold text-gray-600">Revenue</span>
+                    <span className="text-lg lg:text-sm font-semibold text-gray-600">Revenue</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">$650/month</div>
+                  <div className="text-lg font-bold text-gray-900 lg:text-2xl">$650/month</div>
                 </div>
               </div>
 
@@ -383,7 +383,7 @@ function App() {
                 />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">ilyjump</h3>
-                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-purple-100 text-purple-800 px-2 rounded-full text-sm font-semibold">
                     Growth Tier
                   </span>
                 </div>
@@ -395,7 +395,7 @@ function App() {
                     <Users className="w-5 h-5 text-blue-600" />
                     <span className="text-sm font-semibold text-gray-600">Followers</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900">
                     78 → 2,340
                   </div>
                 </div>
@@ -405,7 +405,7 @@ function App() {
                     <DollarSign className="w-5 h-5 text-green-600" />
                     <span className="text-sm font-semibold text-gray-600">Revenue</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">$780/month</div>
+                  <div className="text-lg lg:text-xl font-bold text-gray-900">$780/month</div>
                 </div>
               </div>
 
@@ -444,7 +444,7 @@ function App() {
                 />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">faronova</h3>
-                  <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-purple-100 text-purple-800 px-2 rounded-full text-sm font-semibold">
                     Premium Tier
                   </span>
                 </div>
@@ -456,7 +456,7 @@ function App() {
                     <Users className="w-5 h-5 text-blue-600" />
                     <span className="text-sm font-semibold text-gray-600">Followers</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900">
                     92 → 3,120
                   </div>
                 </div>
@@ -466,7 +466,7 @@ function App() {
                     <DollarSign className="w-5 h-5 text-green-600" />
                     <span className="text-sm font-semibold text-gray-600">Revenue</span>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">$1,120/month</div>
+                  <div className="text-lg lg:text-2xl font-bold text-gray-900">$1,120/month</div>
                 </div>
               </div>
 

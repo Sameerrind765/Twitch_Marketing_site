@@ -109,9 +109,9 @@ const SuccessStories: React.FC<SuccessStoriesProps> = ({ isOpen, onClose }) => {
                   <div className="bg-white p-4 rounded-lg">
                     <div className="flex items-center gap-2 mb-2">
                       <DollarSign className="w-5 h-5 text-green-600" />
-                      <span className="text-sm font-semibold text-gray-600">Revenue</span>
+                      <span className="text-lg font-semibold text-gray-600">Revenue</span>
                     </div>
-                    <div className="text-2xl font-bold text-gray-900">{story.revenue}</div>
+                    <div className="text-lg lg:text-2xl font-bold text-gray-900">{story.revenue}</div>
                   </div>
                 </div>
                 
