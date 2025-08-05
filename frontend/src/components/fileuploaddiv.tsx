@@ -31,11 +31,11 @@ const FileUploadDiv: React.FC<Props> = ({ fileName, startUpload, onUploadComplet
       const formData = new FormData();
       const publicId = `payment-confirmation-${Date.now()}`;
       formData.append('file', file);
-      formData.append('upload_preset', 'basit-twitch1');
+      formData.append('upload_preset', 'ml_default');
       formData.append('public_id', publicId);
 
       try {
-        const res = await fetch('https://api.cloudinary.com/v1_1/diwopbl5x/image/upload', {
+        const res = await fetch('https://api.cloudinary.com/v1_1/dzqtygtxd/image/upload', {
           method: 'POST',
           body: formData,
         });

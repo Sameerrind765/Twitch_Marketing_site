@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import SuccessStories from './components/SuccessStories';
+import { useState } from 'react';
 import ContactForm from './components/ContactForm';
 import {
   Zap,
@@ -10,14 +9,11 @@ import {
   CheckCircle,
   Star,
   BarChart3,
-  Globe,
   CreditCard,
   Smartphone,
   Wallet,
   ArrowRight,
-  PlayCircle,
   Award,
-  Shield,
   Rocket,
   Calendar,
   ExternalLink
@@ -122,28 +118,28 @@ function App() {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <div className="bg-purple-500/20 p-4 rounded-full">
+            <div className="flex justify-center mb-6 w-[100px] mx-auto">
+                <img src="/logo.png" alt="" />
+              {/* <div className="bg-purple-500/20 p-4 rounded-full">
                 <Zap className="w-12 h-12 text-purple-300" />
-              </div>
+              </div> */}
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Twitch Growth &<br />
+            <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
+              Grow Your Twitch Channel with<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                Monetization Services
+                Proven Monetization
               </span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-purple-100 max-w-3xl mx-auto leading-relaxed">
-              From zero to Twitch Affiliate with guaranteed results. Organic growth through targeted Meta ads,
-              professional branding, and proven strategies that deliver real success.
+              Welcome to  <strong>GrowStreamers</strong> – the one-stop solution for streamers who want to go from 0 to Twitch Affiliate. We use laser-focused Meta ads, expert branding, and smart analytics to get you there. Fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <button
                 onClick={() => handleStartGrowing()}
-                className="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                className="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-lg font-semibold text-base md:text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Rocket className="w-5 h-5" />
-                Start Growing Now
+                Get Started with GrowStreamers
               </button>
             </div>
 
@@ -189,8 +185,8 @@ function App() {
               <div
                 key={plan.id}
                 className={`relative p-8 rounded-2xl transition-all duration-300 hover:scale-105 cursor-pointer ${plan.highlight
-                    ? 'bg-gradient-to-br from-purple-600 to-indigo-600 text-white shadow-2xl'
-                    : 'bg-gray-50 hover:bg-gray-100 border-2 border-gray-200'
+                  ? 'bg-gradient-to-br from-purple-600 to-indigo-600 text-white shadow-2xl'
+                  : 'bg-gray-50 hover:bg-gray-100 border-2 border-gray-200'
                   }`}
                 onClick={() => setSelectedPlan(plan.id)}
               >
@@ -229,8 +225,8 @@ function App() {
                 <button
                   onClick={() => handleStartGrowing(plan.id)}
                   className={`w-full py-4 px-6 rounded-lg font-semibold transition-all ${plan.highlight
-                      ? 'bg-white text-purple-600 hover:bg-gray-100'
-                      : 'bg-purple-600 text-white hover:bg-purple-700'
+                    ? 'bg-white text-purple-600 hover:bg-gray-100'
+                    : 'bg-purple-600 text-white hover:bg-purple-700'
                     }`}>
                   Get Started
                   <ArrowRight className="w-5 h-5 inline ml-2" />
@@ -576,7 +572,7 @@ function App() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 TwitchGrowth Pro. All rights reserved. Guaranteed results or your money back.</p>
+            <p>&copy; 2025 GrowStreamers. All rights reserved. This site is not affiliated with or endorsed by Twitch Interactive, Inc. Results may vary and depend on individual content, consistency, and Twitch platform policies.</p>
           </div>
         </div>
       </footer>

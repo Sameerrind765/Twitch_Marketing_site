@@ -379,7 +379,7 @@ P.S. Follow us on Twitch for exclusive streaming tips and community events!
 
     // Send notification email to admin
     await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+      from: `"Grow Streamers" <${process.env.EMAIL_USER}>`,
       to: `${process.env.ADMIN}, ${process.env.EMAIL_USER}`,
       subject: `🎮 New Twitch Growth Inquiry from ${twitchForm.name}`,
       text: `
@@ -433,7 +433,7 @@ Remember to follow up promptly - strike while the iron is hot! 🔥
         <li style="margin-bottom: 8px;"><strong>Name:</strong> ${twitchForm.name}</li>
         <li style="margin-bottom: 8px;"><strong>Email:</strong> <a href="mailto:${twitchForm.email}" style="color: #4299e1;">${twitchForm.email}</a></li>
         <li style="margin-bottom: 8px;"><strong>Twitch:</strong> <a href="https://twitch.tv/${twitchForm.twitchUsername}" target="_blank" style="color: #9146ff;">@${twitchForm.twitchUsername}</a></li>
-        <li style="margin-bottom: 8px;"><strong>Payment</strong> <a href="${twitchForm.url}" target="_blank" style="color: #9146ff;">@${twitchForm.twitchUsername}</a></li>
+        <li style="margin-bottom: 8px;"><strong>Payment Screenshot</strong> <a href="${twitchForm.url}" target="_blank" style="color: #9146ff;">@${twitchForm.twitchUsername}</a></li>
       </ul>
     </div>
 
