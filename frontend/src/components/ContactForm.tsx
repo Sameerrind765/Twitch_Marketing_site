@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Send, User, Mail, MessageSquare, Twitch, CheckCircle, CreditCard, Smartphone, Wallet, ArrowRight, Shield, AlertCircle } from 'lucide-react';
+import { X, Send, User, Mail, MessageSquare, Twitch, CheckCircle, Smartphone, Wallet, ArrowRight, Shield, AlertCircle } from 'lucide-react';
 import FileUploadDiv from './fileuploaddiv';
 
 interface ContactFormProps {
@@ -48,7 +48,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose, selectedPlan
   const [errors, setErrors] = useState<FormErrors>({});
   const [isUploadTriggered, setIsUploadTriggered] = useState(false);
 
-  const api = import.meta.env.VITE_API_BASE_URL;
+  const api = "http://localhost:5000"
 
   const goals = [
     { label: 'Reach Twitch Affiliate', tier: 'basic' },
