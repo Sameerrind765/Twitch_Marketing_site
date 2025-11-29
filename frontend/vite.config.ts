@@ -12,4 +12,5 @@ export default defineConfig({
     port: 4173,
     allowedHosts: ['growstreamers.com', 'www.growstreamers.com'],
   },
+  base: '/Twitch_Marketing_site/',
 });
